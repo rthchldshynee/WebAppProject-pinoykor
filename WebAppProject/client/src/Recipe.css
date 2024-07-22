@@ -1,0 +1,32 @@
+#recipeForm, #contactForm {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+label {
+    font-size: xx-large;
+}
+
+input, textarea, select {
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+.submit {
+    font-size: x-large;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+h1, h2, p, a {
+    font-size: x-large;
+    text-align: center;
+}
+
+textarea {
+    resize: vertical;
+    height: 5rem;
+}

@@ -1,0 +1,100 @@
+#skill {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+    font-weight: 400;
+    font-size: xx-large;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: grey;
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 6rem;
+    width: 10rem;
+    margin-right: 2rem;
+}
+
+.skillBarText > p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#team {
+    width: 100vw;
+    max-width: 65rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.teamTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.teamMemberImg {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.teamMemberInfo {
+    text-align: left;
+    max-width: 40rem;
+}
+
+.teamMemberInfo h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.teamMemberInfo h4 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: grey;
+}
+
+.teamMemberInfo p,
+.teamMemberInfo ul {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.teamMemberInfo ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}

@@ -1,0 +1,117 @@
+#slideDeck {
+    height: calc(100vh - 4em);
+    width: 100vw;
+    max-width: 75em;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+.slideDeckContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.teamLogo {
+    width: 200px;
+    height: 200px;
+}
+
+.teamName {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.subtext {
+    font-size: 1em;
+    font-weight: 200;
+    margin-left: 1em;
+}
+
+#intro {
+    height: calc(100vh - 4em);
+    width: 100vw;
+    max-width: 75em;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    font-size: x-large;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2em;
+    font-size: 3em;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+#magicChef {
+    padding: 2em;
+    background-color: #f9f9f9;
+    text-align: left;
+    max-width: 75em;
+    margin: 2em auto;
+}
+
+.magicChefContent h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.magicChefContent h3 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.magicChefContent p, .magicChefContent ul{
+    font-size: 1.25em;
+    line-height: 1.6;
+}
+
+
+.magicChefContent ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.magicChefContent li {
+    margin-bottom: 0.5em;
+}
