@@ -24,12 +24,10 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   min-width: 320px;
   min-height: 100vh;
-  padding-top: 80px; 
-  padding-bottom: 60px; 
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 button {
@@ -69,7 +67,7 @@ button:focus-visible {
   align-items: center;
   gap: 1rem;
   margin: 0;
-  padding: 1rem; 
+  padding: 1rem;
   width: 100%;
   background-color: #1a1a1a;
   color: rgba(255, 255, 255, 0.87);
@@ -80,7 +78,7 @@ button:focus-visible {
 }
 
 .teamLogo {
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
 
@@ -106,7 +104,9 @@ button:focus-visible {
   width: 100%;
   max-width: 75em;
   padding: 1em;
-  margin-top: 60px;
+  margin: auto;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -117,6 +117,11 @@ button:focus-visible {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 75em;
 }
 
 .footer a {

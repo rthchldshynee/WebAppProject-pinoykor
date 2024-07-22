@@ -6,15 +6,13 @@ export default function Layout({ children }) {
     return (
         <>
             <div className="header">
-                <img src={teamLogo} alt="Team Logo" className="teamLogo"/>
+                <img src={teamLogo} alt="Team Logo" className="teamLogo" />
                 <h1 className="appTitle">Magic Chef App</h1>
             </div>
             
             <nav className="navigation">
                 <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/recipe">Recipe</Link>
             </nav>
-            <br/>
-            <hr />
             <div className="content">
                 {children}
             </div>
@@ -22,7 +20,7 @@ export default function Layout({ children }) {
                 <div className="footer-content">
                     <p>&copy; 2024 Magic Chef App. All rights reserved.</p>
                     <p>
-                        <Link>Privacy Policy</Link> | <Link>Terms of Service</Link>
+                        <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms of Service</Link>
                     </p>
                 </div>
             </footer>

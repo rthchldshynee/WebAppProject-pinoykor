@@ -1,4 +1,4 @@
-import '../src/recipe.css'
+import '../src/Recipe.css'
 
 export default function Recipe() {
     return (

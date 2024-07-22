@@ -54,7 +54,7 @@ export default function About() {
                               
                               <p>I am responsible to:</p>
                               <ul>
-                                   <li>Design the app's user interface, including layouts, colors, and typography.</li>
+                                   <li>Design the app&apos;s user interface, including layouts, colors, and typography.</li>
                                    <li>Create wireframes, mockups, and prototypes.</li>
                                    <li>Conduct user research and usability testing.</li>
                                    <li>Collaborate with the Lead Developer to implement design elements.</li>
