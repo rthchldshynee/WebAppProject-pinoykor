@@ -1,146 +1,135 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* Apply basic resets */
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  background-image: url('./assets/magichomebg.jpg');
+  background-size: cover;
+  /* background-repeat: no-repeat;*/
+}
+
+/* Ensure the app takes full height */
+#root {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
   min-height: 100vh;
-  padding-top: 120px;
-  padding-bottom: 60px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Container to grow and push the footer */
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.home-content {
+  max-width: 75em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.647);
+  padding: 2em;
+  margin: 2em auto;
+}
+
+.header, nav, footer, section {
+  display: block;
 }
 
 .header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin: 0;
-  padding: 1rem;
-  width: 100%;
-  background-color: #1a1a1a;
-  color: rgba(255, 255, 255, 0.87);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  justify-content: flex-start;
 }
 
 .teamLogo {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
+  margin-right: 1em;
 }
 
 .appTitle {
-  font-size: 2rem;
+  font-size: 2em;
   margin: 0;
 }
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: x-large;
-  background-color: #1a1a1a;
-  padding: 0.5em;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  z-index: 999;
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
 }
 
-.content {
-  width: 100%;
-  max-width: 75em;
-  padding: 1em;
-  margin: auto;
-  flex-grow: 1;
-  box-sizing: border-box;
+.navigation a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
 }
 
 .footer {
-  background-color: #1a1a1a;
-  color: rgba(255, 255, 255, 0.87);
+  background-color: #333;
+  color: #fff;
   text-align: center;
   padding: 1em 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  flex-shrink: 0;
 }
 
 .footer-content {
-  margin: 0 auto;
   max-width: 75em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-.footer a {
-  color: #646cff;
-  text-decoration: inherit;
+.subtext {
+  font-size: 1em;
+  font-weight: 200;
+  margin-left: 1em;
 }
 
-.footer a:hover {
-  color: #535bf2;
+/* Additional styles */
+.magicChefContent, .teamInfo {
+  padding: 2em;
 }
 
-@media (prefers-color-scheme: light) {
-  .header,
-  .navigation,
-  .footer {
-    background-color: #f9f9f9;
-    color: #213547;
+.magicChefContent h3, .teamInfo h3 {
+  font-size: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.magicChefContent p, .magicChefContent ul, .teamInfo p, .teamInfo ul {
+  font-size: 1.25em;
+  line-height: 1.6;
+}
+
+.magicChefContent ul, .teamInfo ul {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+.magicChefContent li, .teamInfo li {
+  margin-bottom: 0.5em;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .teamLogo {
+    width: 200px;
+    height: 200px;
   }
-  .footer a:hover {
-    color: #747bff;
+}
+
+@media (max-width: 480px) {
+  .teamLogo {
+    width: 150px;
+    height: 150px;
   }
 }

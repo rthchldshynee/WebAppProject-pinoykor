@@ -1,5 +1,5 @@
 import rothchild from '../src/assets/avatar3.jpg';
-import arvin from '../src/assets/avatar4.gif';
+import arvin from '../src/assets/avatar4.jpeg';
 import jamela from '../src/assets/avatar2.jpg';
 import eunseo from '../src/assets/avatar1.jpg';
 import '../src/index.css';

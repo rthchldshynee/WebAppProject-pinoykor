@@ -1,32 +1,75 @@
 #recipeForm, #contactForm {
-    max-width: 50rem;
+    max-width: 100%; /* Ensure full width of the parent container */
+    width: 50rem; /* Desired width */
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid red; /* Diagnostic border to visualize form width */
 }
 
 label {
-    font-size: xx-large;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
 input, textarea, select {
-    font-size: larger;
+    font-size: 1rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Full width of the parent container */
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #888;
+    outline: none;
 }
 
 .submit {
-    font-size: x-large;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width of the parent container */
+}
+
+.submit:hover {
+    background-color: #45a049;
 }
 
 h1, h2, p, a {
-    font-size: x-large;
+    font-size: 1.5rem;
     text-align: center;
+    color: #ffffff;
 }
 
 textarea {
     resize: vertical;
     height: 5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #recipeForm, #contactForm {
+        width: 90%; /* Adjust width for tablets */
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #recipeForm, #contactForm {
+        width: 100%; /* Adjust width for mobile devices */
+        padding: 1rem;
+    }
 }

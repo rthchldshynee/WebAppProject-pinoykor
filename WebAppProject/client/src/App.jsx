@@ -1,18 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-//import { ThemeProvider } from '@material-ui/styles';
-import MainRouter from '../MainRouter';
-//import Contact from './contact'
-//import theme from '../theme';
-//import { hot } from 'react-hot-loader'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from '../components/layout';
+import Home from '../components/Home';
+import About from './about';
+import Recipe from './Recipe';
+import './index.css';
+
 const App = () => {
  return (
- <Router>
- 
- <MainRouter />
-
- </Router>
+   <Router>
+     <Layout>
+       <Routes>
+         <Route path="/" element={<Home />} />
+         <Route path="/about" element={<About />} />
+         <Route path="/recipe" element={<Recipe />} />
+       </Routes>
+     </Layout>
+   </Router>
  );
 };
-export default App;
 
+export default App;
