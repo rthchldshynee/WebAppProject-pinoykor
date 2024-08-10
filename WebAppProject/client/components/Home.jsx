@@ -22,7 +22,7 @@ const Home = () => {
                 </h3>
                 <div className="teamMembers subtext">
                     Estella, Arvin Christian - 301396938 <br/>
-                    Park, Eunseo - 301396938 <br/>
+                    Park, Eunseo - 301423139 <br/>
                     Sanchez, Jamela Mosende - 301340831 <br/>
                     Tabing, Rothchild Shyne - 301369345
                 </div>

@@ -5,7 +5,9 @@ html, body {
   padding: 0;
   background-image: url('./assets/magichomebg.jpg');
   background-size: cover;
-  /* background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 /* Ensure the app takes full height */
@@ -28,54 +30,60 @@ html, body {
 .home-content {
   max-width: 75em;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.647);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2em;
   margin: 2em auto;
 }
 
+/* Style for header, navigation, and footer */
 .header, nav, footer, section {
   display: block;
 }
 
 .header {
-  background-color: #333;
+  background-color: #ff6600; /* Orange background */
   color: #fff;
-  padding: 1em;
+  padding: 1em 2em;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .teamLogo {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   margin-right: 1em;
 }
 
 .appTitle {
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: bold;
   margin: 0;
 }
 
 .navigation {
-  background-color: #444;
+  background-color: #ff7f00; /* Slightly lighter orange */
   color: #fff;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 1em 0;
 }
 
 .navigation a {
   color: #fff;
-  margin: 0 1em;
+  margin: 0 1.5em;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .navigation a:hover {
   text-decoration: underline;
+  color: #ffd1b3; /* Light orange */
 }
 
 .footer {
-  background-color: #333;
+  background-color: #ff6600; /* Matching footer with header */
   color: #fff;
   text-align: center;
   padding: 1em 0;
@@ -90,8 +98,9 @@ html, body {
 
 .subtext {
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 300;
   margin-left: 1em;
+  opacity: 0.8;
 }
 
 /* Additional styles */
@@ -103,11 +112,12 @@ html, body {
   font-size: 2em;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+  color: #ff6600; /* Orange heading */
 }
 
 .magicChefContent p, .magicChefContent ul, .teamInfo p, .teamInfo ul {
   font-size: 1.25em;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .magicChefContent ul, .teamInfo ul {
@@ -119,17 +129,47 @@ html, body {
   margin-bottom: 0.5em;
 }
 
-/* Optional: Add media queries for responsiveness */
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .teamLogo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin: 1em 0;
+  }
+
+  .navigation a {
+    margin: 0.5em 1em;
+  }
+
+  .home-content {
+    padding: 1.5em;
   }
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 1em;
+  }
+
+  .appTitle {
+    font-size: 2em;
+  }
+
   .teamLogo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .navigation a {
+    margin: 0.5em;
+  }
+
+  .home-content {
+    padding: 1em;
   }
 }

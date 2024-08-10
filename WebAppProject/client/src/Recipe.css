@@ -51,7 +51,6 @@ input:focus, textarea:focus, select:focus {
 h1, h2, p, a {
     font-size: 1.5rem;
     text-align: center;
-    color: #ffffff;
 }
 
 textarea {
